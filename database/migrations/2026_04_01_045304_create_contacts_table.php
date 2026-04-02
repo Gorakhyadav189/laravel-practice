@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('contacts', function (Blueprint $table) {
             $table->id();
               $table->string('name');   // ✅ add this
-        $table->string('email');  // ✅ add this
+        $table->string('email');  // ✅ add thisphp artisan migrate:fresh
             $table->timestamps();
         });
     }
